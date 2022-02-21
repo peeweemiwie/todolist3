@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>To Do List</title>
+</head>
+
+<body>
+  <h3>Todo:</h3>
+  <ul class="container" data-lists-saved></ul>
+  <form action="" data-form>
+    <label for="task">New task:
+      <input type="text" name="task" id="task" data-text-input autofocus="true">
+    </label>
+  </form>
+  <h3>Completed:</h3>
+  <ul class="container" data-lists-completed></ul>
+  <template id="template">
+    <li data-completed="false" draggable="true" class="draggable" data-title data-index>
+      <input type="checkbox" name="completed" id="completed" data-complete>
+      <input type="text" data-task>
+      <button data-delete>Delete</button>
+    </li>
+  </template>
+</body>
+
+</html>

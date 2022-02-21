@@ -1,0 +1,10 @@
+
+get input value
+store in array
+
+each items in array loop through function below:
+
+clone template with li
+add input value to cloned li
+
+append li in ul
